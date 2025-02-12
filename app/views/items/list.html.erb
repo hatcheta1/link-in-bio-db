@@ -1,9 +1,9 @@
-<h1>"Hello, World!"</h1>
-
-<% Item.all.each do |item| %>
-  <div>
-    <a href="<%= item.link_url %>">
+<div class="items">
+<% @list_of_items.each do |item| %>
+  <div class="item link">
+    <a href="<%= item.link_url %>" class="thumbnail">
       <%= item.link_description %>
     </a>
   </div>
 <% end %>
+</div>
